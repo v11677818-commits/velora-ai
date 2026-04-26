@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Velora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f3b6d2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: black;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .google {
+      background: white;
+      border: 1px solid #ddd;
+    }
+
+    .register {
+      background: #e0e0e0;
+    }
+
+    .guest {
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Thanks</h1>
+
+    <button class="btn google" onclick="googleLogin()">Continue with Google</button>
+    <button class="btn register" onclick="register()">Register</button>
+    <button class="btn guest" onclick="enterGuest()">Guest</button>
+  </div>
+
+  <script>
+    function googleLogin() {
+      alert("Google login will be added later");
+    }
+
+    function register() {
+      window.location.href = "register.html";
+    }
+
+    function enterGuest() {
+      localStorage.setItem("role", "guest");
+      window.location.href = "home.html";
+    }
+  </script>
+
+</body>
+</html>
