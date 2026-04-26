@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subscription</title>
+</head>
+<body style="background:black;color:white;font-family:Arial">
+
+<h2>Subscription</h2>
+<p>Price: 20 USD</p>
+
+<button onclick="subscribe()">Subscribe</button>
+
+<script>
+function subscribe() {
+  localStorage.setItem("role", "premium");
+  alert("Subscribed");
+}
+</script>
+
+</body>
+</html>
