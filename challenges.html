@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Challenges</title>
+</head>
+<body style="background:black;color:white;font-family:Arial">
+
+<h2>Challenges</h2>
+
+<div id="list"></div>
+
+<script>
+const challenges = [
+"Sleep Party",
+"Eid Al-Fitr",
+"Eid Al-Adha",
+"Wedding",
+"University",
+"Casual",
+"Winter",
+"Summer",
+"Beach",
+"Graduation",
+"Dinner",
+"Korean Style",
+"Classic",
+"Luxury",
+"Sport",
+"Instagram",
+"Celebrity",
+"Work",
+"Simple",
+"Bold"
+];
+
+let html = "";
+challenges.forEach(c => {
+  html += "<p>" + c + "</p>";
+});
+
+document.getElementById("list").innerHTML = html;
+</script>
+
+</body>
+</html>
