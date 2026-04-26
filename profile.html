@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+</head>
+<body style="background:black;color:white;font-family:Arial">
+
+<h2>Profile</h2>
+
+<p id="role"></p>
+<p>Points: <span id="points">0</span></p>
+
+<script>
+let role = localStorage.getItem("role");
+document.getElementById("role").innerText = "Role: " + role;
+</script>
+
+</body>
+</html>
